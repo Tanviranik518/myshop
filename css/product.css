@@ -1,0 +1,30 @@
+.leftslider {
+    display: block !important;
+    float: left !important;
+}
+.rightside {
+    display: block !important;
+    float: right !important;
+}
+.my-p{
+    color: white;
+    background-color: teal;
+    width: 50px;
+    text-align: center;
+    border-radius: 2px;
+}
+.buynow {width: 100%;}
+.buynow input {
+    width: 50px !important;
+    height: 30px !important;
+}
+.buynow-btn {
+    background-color: orange;
+    color: white;
+}
+
+ 
+/* 
+@media (max-width:576px) {
+    /* .buynow button {-top: 35px !important;} 
+} */

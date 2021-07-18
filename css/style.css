@@ -1,0 +1,297 @@
+html {scroll-behavior: smooth;}
+* {margin: 0;}
+body {font-family: 'Poppins', sans-serif !important; background-color: #f7f8fa !important;}
+::placeholder { font-size: 13px;}
+a {text-decoration: none !important;}
+a:hover {color: none;}
+li { list-style: none;}
+.orangecolor { color: orange !important;}
+
+
+/* content-1 start */
+
+/* header start */
+.logo {padding-left: 35px;}
+.mysearch { border-radius: 50px 0 0 50px!important;}
+.searchbtn { border-radius: 0 50px 50px 0!important;}
+.mybtn a {color: white;}
+.mynav {border-bottom: 2px solid orange;}
+.mybtn:hover {background-color: white;}
+.mybtn:hover a{color: rgb(255, 0, 0);}
+.mynav2, .searchbtn { background-color: orange !important; }
+.bordermd { 
+    border-left: 1.4px solid white !important;
+    border-right: 1.4px solid white !important;
+    height: 100% !important;
+}
+#menu-btn{ 
+    display: block;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: fixed;
+    top: 8px;
+    left: 5px;
+    z-index: 100;
+}
+.menuclose { 
+    display: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.815);
+    font-size: 40px;
+}
+.chatnow {
+    position: fixed;
+    font-size: 40px;
+    color: red;
+    bottom: 20px;
+    right:10px;
+    z-index: 200;
+}
+#chathere {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 220px;
+    right: 70px;
+    z-index: 400;
+}
+.boxsd-none {box-shadow: none !important;}
+.typing-img {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.typing-img img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+/* header end */
+
+
+
+ /* menu start */
+ .my-sidemenu::-webkit-scrollbar {
+    width: 9px;
+    background-color: #f7f8fa;
+}
+ .my-sidemenu::-webkit-scrollbar-thumb {
+    background: linear-gradient( rgba(11, 152, 177, 0.781),rgba(198, 29, 204, 0.747));
+    border-radius: 20px;
+}
+
+ .my-sidemenu {
+    display: none;
+    height: 100vh;
+    max-width: 320px;
+    background-color: rgb(247, 247, 247);
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+}
+.my-sidemenu ul li {
+    padding: 10px 20px;
+}
+.my-sidemenu ul li:hover {background-color: orange;}
+.my-sidemenu ul li ul{ 
+    display: none;
+    padding: 0 5px;
+}
+
+.my-sidemenu ul li ul li {padding: 5px 0 5px 10px; font-size: 15px;}
+.my-sidemenu ul li ul a {color: rgb(0, 0, 0);}
+.my-sidemenu ul li ul li:hover a {color: white;}
+.my-sidemenu ul li:hover ul {display: block;}
+.fa-angle-down {display: none !important; color: white;}
+.my-sidemenu ul li:hover .fa-angle-right {display: none;}
+.my-sidemenu ul li:hover .fa-angle-down {display: block !important;}
+.fa-phone {font-size: 22px;}
+ /* menu end */
+
+/* content-1 end */
+
+
+
+
+/* content-2 start */
+.my-slider {
+    border-radius: 12px ;
+    overflow: hidden;
+}
+.carousel-indicators {
+    position: absolute; 
+    bottom: -40px !important;
+}
+/* content-2 end */
+
+
+
+
+/* main-content start */
+.main-content {padding: 20px 5%;}
+.main-content a {color: rgb(63, 63, 63);}
+
+/* content-3 start */
+.content-3 {
+    background-color: white;
+    margin: 0 1.8% !important;
+}
+.myrow {border-radius: 15px !important;}
+.content-3 a:hover {color: rgb(63, 63, 63);}
+#brand, #shopping {display: none;}
+#categoriesbr{ border-bottom: 2px solid black;}
+#categoriesbr, #brandbr, #shoppingbr {cursor: pointer;} 
+#categoriesbr p, #brandbr p, #shoppingbr p {text-align: center;}
+/* content-3 end */
+
+
+
+
+/* content-4 start */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1vw;
+}
+.grid-item {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 206px;
+    padding: 8px; 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.123);
+}
+.grid-item:hover img {
+    transition: 0.7;
+    transform: scale(1.1);
+}
+.grid-item img {
+    width: 100px;
+    height: 100px;
+}
+.grid-item p {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(8, 8, 8);
+    font-size: 13px;
+}
+/* content-4 end */
+
+
+
+
+/* content-5 start */
+.my-padding {padding: 70px 0 0 0;}
+.my-h3{
+    font-family: 'Lobster Two', cursive;
+    width: 290px;
+    height: auto;
+    background-color: orange;
+    color: rgba(255, 255, 255, 0.952);
+    padding: 8px 20px;
+    clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+
+}
+.my-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+    grid-gap: 2vw;
+}
+.my-grid-item {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 325px;
+    padding: 10px; 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.123);
+}
+.my-grid-item:hover img {
+    transition: 0.7;
+    transform: scale(1.2);
+}
+.my-grid-item img {
+    width: 130px;
+    height: 180px;
+}
+#fashionformen img {
+    height: 160px;
+}
+.my-grid-item p {
+    text-align: center;
+    text-transform: capitalize;
+    color: rgb(8, 8, 8);
+    font-size: 14.2px;
+}
+.star {font-size: 11px ;}
+.img-hoverbtn {
+    width: 60px;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    transition: 0.8s;
+}
+.my-grid-item:hover .img-hoverbtn {opacity: 1;}
+.hoverbtn:hover{color: rgb(236, 215, 19)!important;}
+/* content-5 end */
+
+/* main-content end */
+
+
+
+
+/* footer start */
+.footer a, .footer p { 
+    color: rgb(248, 248, 248);
+    font-size: 12px;
+}
+.fa-instagram {padding-right: 20px;}
+/* footer end */
+
+
+
+
+
+
+
+/* small device start */
+@media (max-width:767px) {
+    .grid-container{grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));}
+}
+/* small device end */
+
+
+@media (max-width:500px) {.my-grid-container {grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));}}
+
+
+/* normal phone start */
+@media (max-width:576px) {
+    .mybtn a {font-size: 13px;}
+    #menu-btn{font-size: 20px;}
+}
+/* normal phone end */
+
+
+@media (max-width:400px) {
+    .myoffer .my-grid-item {height: 340px;}
+}
+
+/* small phone start */
+@media (max-width:374px) {
+    .my-grid-container {grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));} 
+}
+/* small phone end */
+
+
+/* button phone start */
+@media (max-width: 319px) {
+    .mybtnii { display: none !important;}
+    .mybtn { font-size: 13px !important;}
+    .content-3 a {font-size: 13px;}
+}
+/* button phone end */
